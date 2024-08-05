@@ -266,4 +266,91 @@ hr {
     color: white;
     margin-bottom: 20px;
 }
-    
+/* Add these styles to your existing gta6.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .fullscreen-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .fullscreen-img img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  /* Add these styles to your existing gta6.css */
+
+/* Spacing between the navbar and the first div */
+#firstTitle {
+    margin-top: 20px; /* Adjust the value as needed */
+  }
+  
+  /* Spacing between each div */
+  .paragraphs {
+    margin-top: 30px; /* Adjust the value as needed */
+    margin-bottom: 30px; /* Adjust the value as needed */
+  }
+  
+  /* Spacing between the last div and the footer */
+  #CallToAction {
+    margin-bottom: 50px; /* Adjust the value as needed */
+  }
+  
+  /* General body styles */
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Fullscreen image styles */
+  .fullscreen-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+  }
+  
+  .fullscreen-img img {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  
+  .close-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
