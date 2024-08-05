@@ -118,5 +118,36 @@
             <p>&copy; 2024 ProGamers. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const images = document.querySelectorAll("img");
+          const fullscreenContainer = document.createElement("div");
+          fullscreenContainer.classList.add("fullscreen-img");
+          const fullscreenImage = document.createElement("img");
+          const closeButton = document.createElement("div");
+          closeButton.classList.add("close-btn");
+          closeButton.innerHTML = "&times;";
+          fullscreenContainer.appendChild(fullscreenImage);
+          fullscreenContainer.appendChild(closeButton);
+          document.body.appendChild(fullscreenContainer);
+        
+          images.forEach(img => {
+            img.addEventListener("click", () => {
+              fullscreenImage.src = img.src;
+              fullscreenContainer.style.display = "flex";
+            });
+          });
+        
+          closeButton.addEventListener("click", () => {
+            fullscreenContainer.style.display = "none";
+          });
+        
+          fullscreenContainer.addEventListener("click", (e) => {
+            if (e.target === fullscreenContainer || e.target === closeButton) {
+              fullscreenContainer.style.display = "none";
+            }
+          });
+        });
+        </script>
 </body>
 </html>
